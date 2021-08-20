@@ -6,15 +6,15 @@ For example, a micro SD card on which you wish to place audio Bibles and/or teac
 
 e.g.
 
-0001 - tracks starting here are the gospel of Matthew (0001 = Matthew 1, 0002 = Matthew 2, etc.) in the first language
-0029 - tracks starting here are the gospel of Mark (0029 = Mark 1, 0030 = Mark 2, etc.) in the first language
-...
-1001 - tracks starting here are some other teaching resource in the first language
-...
-2001 - tracks starting here are the gospel of Matthew (2001 = Matthew 1, 2002 = Matthew 2, etc.) in the second language
-2029 - tracks starting here are the gospel of Mark (2029 = Mark 1, 2030 = Mark 2, etc.) in the second language
-...
-3001 - tracks starting here are some other teaching resource in the second language
+0001 - tracks starting here are the gospel of Matthew (0001 = Matthew 1, 0002 = Matthew 2, etc.) in the first language\
+0029 - tracks starting here are the gospel of Mark (0029 = Mark 1, 0030 = Mark 2, etc.) in the first language\
+...\
+1001 - tracks starting here are some other teaching resource in the first language\
+...\
+2001 - tracks starting here are the gospel of Matthew (2001 = Matthew 1, 2002 = Matthew 2, etc.) in the second language\
+2029 - tracks starting here are the gospel of Mark (2029 = Mark 1, 2030 = Mark 2, etc.) in the second language\
+...\
+3001 - tracks starting here are some other teaching resource in the second language\
 
 etc.
 
@@ -33,3 +33,7 @@ The tools achieve this by:
 # Help
 
 To know what any particular script does, and to receive help on using it, run it with the `--help` parameter, e.g. `./create-directories-from-sources.sh --help`.
+
+# Contributing
+
+Patches and improvements of all kinds are welcome! Please open an issue in Github, and link a pull request to it.
