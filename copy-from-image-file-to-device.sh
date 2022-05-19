@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $1 = "-?" || $1 = "--help" || $1 != "" ]]; then
-	echo "This script is for copying from an image file to a raw device (found in /dev). It is run interactively (no parameters). i.e. it will prompt you for needed inputs when you run it. It is essentially a convenient wrapper with some extra checks around the 'dd' command.".
+	echo "This script is for copying from an image file to a raw device (found in /dev). It is run interactively (no parameters). i.e. it will prompt you for needed inputs when you run it. It is essentially a convenient wrapper with some extra checks around the 'dd' command (and hene must be run as root)."
 	exit
 fi
 
