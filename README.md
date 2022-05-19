@@ -14,7 +14,7 @@ e.g.
 2001 - tracks starting here are the gospel of Matthew (2001 = Matthew 1, 2002 = Matthew 2, etc.) in the second language\
 2029 - tracks starting here are the gospel of Mark (2029 = Mark 1, 2030 = Mark 2, etc.) in the second language\
 ...\
-3001 - tracks starting here are some other teaching resource in the second language\
+3001 - tracks starting here are some other teaching resource in the third language
 
 etc.
 
