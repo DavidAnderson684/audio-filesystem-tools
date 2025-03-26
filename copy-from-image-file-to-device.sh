@@ -28,7 +28,7 @@ if [[ $? -eq 0 ]]; then
 fi
 
 DEST_SIZE=`blockdev --getsize64 $DESTINATION`
-if [[ -z $DEST_SIZE || $DEST_SIZE -lt $((7*1048576*1024)) || $DEST_SIZE -gt $((9*1048576*1024)) ]]; then
+if [[ -z $DEST_SIZE || $DEST_SIZE -lt $((3*1048576*1024)) || $DEST_SIZE -gt $((16*1048576*1024)) ]]; then
 	echo "$DESTINATION has wrong size or could not be detected; aborting"
 	echo $DEST_SIZE
 	exit 5
