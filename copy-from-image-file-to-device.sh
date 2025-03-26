@@ -1,11 +1,22 @@
 #!/bin/bash
 
-if [[ $1 = "-?" || $1 = "--help" || $1 != "" ]]; then
+function print_help() {
 	echo "This script is for copying from an image file to a raw device (found in /dev). It is run interactively (no parameters). i.e. it will prompt you for needed inputs when you run it. It is essentially a convenient wrapper with some extra checks around the 'dd' command (and hence must be run as root)."
+}
+
+if [[ $1 = "-?" || $1 = "--help" ]]; then
+	print_help
 	exit
 fi
 
 SOURCE=""
+
+for i in "$@"; do
+	if [[ ${i:0:9} =~ "--source=" ]]; then SOURCE=${i:9}
+	else echo "Unknown parameter: $1" >/dev/stderr; print_help; exit 1;
+	fi
+done
+
 ls -l *.img
 while [[ -z "$SOURCE" || $SOURCE = "/" || ! -f "$SOURCE" || ${SOURCE:0:7} = "/dev/sd" ]]; do
 	read -p "Source ($SOURCE) not found or not suitable; please enter another file path: " SOURCE
